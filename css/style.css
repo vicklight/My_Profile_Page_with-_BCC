@@ -1,68 +1,153 @@
-*{
-    font-family: sans-serif ;
+body{
+    font:15px/1.5 Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding:0;
+    background-color: #c4c4c4;
+}
+/* global */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+header{
+    position: fixed;
+    background-color: #051431;
+    padding-top: 30px;
+    min-height: 50px;
+    border-bottom:#0a4bce9d solid 4px;
+    width: 100%  
+}
+nav{
+    float: right;
+    margin-top: 10px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #logo{
+    float:left;
+    color: #ffffff
+}
+header #logo h1{
+    margin: 0;
+}
+.highlight{
+    color: #0a4bce9d
+}
+nav ul li a:hover{
+    color: #0a4bce9d;
+    font-weight: bold;
+}
+.banner{
+
+    min-height: 400px;
+    background-image: url(../img/cool-background-wallpaper-keyboard-abstract-other-177639.jpg);
+    text-align: center;
+    color: #ffffff;
+    
+}
+.banner div h1{
+    margin-top: 250px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.imgclass{
+    float: left;
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 30%;
+    height:  auto;
+    text-align: center;
+    border-right: 1px solid #ccc;
+
+}
+.prof .container{
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
 }
 #profile{
     width: 70%;
     height:auto;
 }
-.imgclass{
-    margin: 150px 0px 0px 35px;
-    width: 300px;
-    height: 200px;
-    text-align: center;
+.prof{
+    width: 100%;
+    margin-top: 40px;
 }
 .icons{
-    width: 300px;
-    height: auto;
-}
-.icons > a > img{
-    width: 10%;
-    height: auto;
-    padding-right: 80px;
-    float: right;
-
-}
-header{
-    position: absolute;
-    background-image: url("../img/cool-background-wallpaper-keyboard-abstract-other-177639.jpg");
-    height: 20em;
-    width: 100%;
-    text-align: center;
-    color: #ffffff;
     
+    width: 30%;
+    height: auto;
+    margin: auto;
 }
+.icons >.container > a > img{
+    width: 100%;
+    height: auto;
 
-.con{
-    padding-top: 350px;
-    padding-left: 350px;
 }
-article{
-    width: 98%;
+.about{
+    float: right;
+    width: 65%;
+    background-color: #ffffff;
+   
+
+}
+.project{
+    margin-top: 30px; 
+    
+
+}
+.containerp1{
+    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 40px; 
+    background-color: #ffffff;
+}
+.content{
+  
+    padding-left: 10px;
+}
+.contimg{
+    float: left;
+    width:30%; 
+}
+.contimg img{
+    width: 30%;
     height: auto;
 }
-h3{
-    font-size: 35px;
+.contaside{
+    float: right;
+    width: 65%;
+    height: auto;
 }
-p{
-    font-size: 22px;
-}
-.aboutsection{
-
-    border-width: 1px;
-    width: 80%;
-    border-radius: 2px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 
-}
 .formsection{
+    margin-top: 60px;
+    margin-left: 350px;
     border-width: 1px;
-    width: 800px;
+    width: 30%;
     border-radius: 2px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: #051431;
+    color: #ffffff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -76,7 +161,7 @@ input[type=text]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=email]{
+input[type=email], textarea{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -85,15 +170,8 @@ input[type=email]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-textarea{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+
+
 input[type=submit] {
     width: 30%;
     background-color: #000000;
@@ -108,11 +186,36 @@ form{
     padding: 20px;
 }
 footer{
-    background-color: #000000;
+    background-color: #031333;
     color: #ffffff;
     text-align: center;
     width: 100%;
     height: 50Px;
     margin-top: 50px;
+    
 
+}
+.butn{
+    width: 30%;
+    height: auto;
+    background-color: #0a4bce;
+    color: #ffffff;
+    border:0;
+    padding: 10px;
+}
+@media(max-width: 760px){
+    #logo,.prof, .container, nav, nav li, .imgclass, .about, .contaside, .contimg, .formsection{ 
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    .banner h1{
+        margin-top: 40px;
+    }
+    .formsection{
+        margin-left: 0;
+    }
 }

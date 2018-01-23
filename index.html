@@ -3,44 +3,142 @@
 <head>
     <meta charset="utf-8">
     <title>Victors profile</title>
+    <meta>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
-    <h3>Basic Code Challenge</h3>
-    <div class="imgclass">
-        <img id="profile" src="img/victor.JPG" alt="victor">
-        <h3 style="color: #000000">Victor Nwauwa</h3>
-        <p style="color: #000000">Web Developer | UI designer</p>
-        <div class="icons">
-            <a href="https://twitter.com/vick_light93"><img src="img/Twitter_alt_4.png" alt="twitter"></a>
-            <a href="https://medium.com/@victor.nwauwa93"><img src="img/images.png" alt="medium"></a>
+    <div class="container">
+        <div id="logo">
+            <h1>Basic Code<span class="highlight"> Challenge</span> </h1>
         </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#profile"> Profile</a>
+                </li>
+                <li>
+                    <a href="#about"> About</a>
+                </li>
+                <li>
+                    <a href="#project"> Projects</a>
+                </li>
+                <li>
+                    <a href="#contact"> Contact</a>
+                </li>
+            </ul>
+        </nav> 
     </div>
 </header>
-<div >
-    <div class="con">
-        <section class="aboutsection">
-            <article>
-                <h3>
-                    About Me
-                </h3>
-                <p>
-                  I am  a fun, and interesting tech lover, I love to make friends,
-                   I dont really like the label given to developers that we are boring,
-                   I want to make an impact in my generation, reason I joined this program.
-                   Crypto is the future, pls dont argue. Join me as we make a difference.
-                </p>
-            </article>
-        </section>
 
+<section class="banner">
+    <div class="container">
+        <h1>Learn, code, and become world class!</h1>
     </div>
-    <footer>
+</section>
 
-        <p>Copyright reserved &copy2018</p>
-    </footer>
 
-</div>
+<section class="prof">
+    <div class="container">
+        <div class="imgclass">
+            <img id="profile" src="img/victor.JPG" alt="victor">
+            <h3 >Victor Nwauwa</h3>
+            <p >Web Developer | UI designer</p>
+            <div class="icons">
+                <div class="container">
+                    <a href="https://twitter.com/vick_light93"><img src="img/Twitter_alt_4.png" alt="twitter"></a>
+                    <a href="https://medium.com/@victor.nwauwa93"><img src="img/images.png" alt="medium"></a>
+                </div>
+            </div>
+        </div>
+        <aside class="about" id="about">
+            <h1>
+                About Me
+            </h1>
+            <p>
+                I am  a fun, and interesting tech lover, I love to make friends,
+                I dont really like the label given to developers that we are boring,
+                I want to make an impact in my generation, reason I joined this program.
+                Crypto is the future, pls dont argue. Join me as we make a difference.
+            </p>
+        </aside>
+    </div>
+        
+</section>
+
+
+
+<section class="project" id="project">
+    <div class="container">
+        <h3>
+            Projects
+        </h3>
+    </div>
+    <div class="containerp1">
+        <div class="content">
+            <div class="contimg">
+                <h3>Week1</h3>
+                <img src="img/Screenshot-2018-1-21 Victors profile.png">
+            </div>
+            <aside class="contaside">
+                <p>
+                    Medium
+                </p>
+                <p>
+                    git
+                </p>
+                <p>
+                    twittter
+                </p>
+            </aside>
+        </div>
+    </div>
+    <div class="containerp1">
+        <div class="content">
+            <div class="contimg">
+                <h3>Week2</h3>
+                <img src="img/Screenshot-2018-1-21 Victors profile.png">
+            </div>
+            <aside class="contaside">
+                <p>
+                    Medium
+                </p>
+                <p>
+                    git
+                </p>
+                <p>
+                    twittter
+                </p>
+            </aside>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="contact" class="formsection">
+    <div class="container">
+        <form action="#">
+            <h3>Contact me</h3>
+            <div>
+                <label>Name</label><br>
+                <input type="text" placeholder="Enter full name..">
+            </div>
+            <div>
+                <label>Email</label><br>
+                <input type="email" placeholder="Enter email..">
+            </div>
+            <div>
+                <label>Message</label><br>
+                <textarea  placeholder="Enter message.."></textarea>
+            </div>
+            <input type="button" class="butn" value="Send">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>BCC Victor's Profile Copyright reserved &copy 2018</p>
+</footer>
 
 </body>
 </html>
